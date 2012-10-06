@@ -12,7 +12,6 @@ class CreateBathrooms < ActiveRecord::Migration
       t.boolean :hasAttendent
       t.boolean :hasSignage
       t.boolean :hasWifi
-      t.references :venue
       t.references :BathroomType
 
       t.timestamps

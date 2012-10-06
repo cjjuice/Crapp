@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121006155102) do
+ActiveRecord::Schema.define(:version => 20121006181302) do
 
   create_table "bathroom_types", :force => true do |t|
     t.string   "type"
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(:version => 20121006155102) do
     t.integer  "BathroomType_id"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
+    t.string   "lat"
+    t.string   "longt"
+    t.string   "name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
   end
 
   add_index "bathrooms", ["BathroomType_id"], :name => "index_bathrooms_on_BathroomType_id"
