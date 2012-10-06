@@ -1,19 +1,19 @@
 //
-//  CrappNewsViewController.m
+//  CrappAddRatingViewController.m
 //  Crapp
 //
 //  Created by Hyde, Andrew on 10/6/12.
 //  Copyright (c) 2012 Crapp!. All rights reserved.
 //
 
-#import "CrappNewsViewController.h"
-#import "CrappNewsCell.h"
+#import "CrappAddRatingViewController.h"
+#import "CrappAddRatingCell.h"
 
-@interface CrappNewsViewController ()
+@interface CrappAddRatingViewController ()
 
 @end
 
-@implementation CrappNewsViewController
+@implementation CrappAddRatingViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,21 +50,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
+
     return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CrappNewsCell *cell = nil;
+    CrappAddRatingCell *cell = nil;
     
-    cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCellID"];
+    cell = [tableView dequeueReusableCellWithIdentifier:@"RatingAdd"];
     if (cell == nil) {
-        cell = [[[CrappNewsCell alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 55)] autorelease];
+        cell = [[[CrappAddRatingCell alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 55)] autorelease];
         cell.clearsContextBeforeDrawing = YES;
     }
-    
-    cell.textLabel.text = @"This is news";
+
+    cell.textLabel.text = @"This is a rating";
     
     return cell;
 }
@@ -82,5 +82,8 @@
 {
     return 100;
 }
+
+
+
 
 @end

@@ -15,6 +15,7 @@
 #import "CrappLogViewController.h"
 #import "CrappVirtualStallViewController.h"
 #import "CrappNewsViewController.h"
+#import "CrappAddRatingViewController.h"
 
 #define kButtonSize 94
 #define kPadding 10
@@ -136,8 +137,8 @@ typedef enum
         }
         case 2:
         {
-            CrappRatingViewController *gottaGo = [[CrappRatingViewController alloc]init];
-            gottaGo.title = @"Ratings";
+            CrappAddRatingViewController *gottaGo = [[CrappAddRatingViewController alloc]init];
+            gottaGo.title = @"Add Rating";
             [self.navigationController pushViewController:gottaGo animated:YES];
             [gottaGo release];
             break;

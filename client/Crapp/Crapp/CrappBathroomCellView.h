@@ -1,5 +1,5 @@
 //
-//  CrappNewsViewController.h
+//  CrappBathroomCellView.h
 //  Crapp
 //
 //  Created by Hyde, Andrew on 10/6/12.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CrappNewsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface CrappBathroomCellView : UIView
+
+-(void)setAttributesWith:(NSDictionary *)dictionary;
+
 
 @end
