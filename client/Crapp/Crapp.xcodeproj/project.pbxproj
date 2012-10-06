@@ -22,6 +22,24 @@
 		0A27CF0D162062DB00189813 /* ESPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF0C162062DB00189813 /* ESPN.framework */; };
 		0A27CF0F162062F300189813 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF0E162062F300189813 /* CoreData.framework */; };
 		0A27CF11162062F900189813 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF10162062F900189813 /* SystemConfiguration.framework */; };
+		0A27CF171620739B00189813 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF161620739B00189813 /* Security.framework */; };
+		0A27CF1A162073A900189813 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF19162073A900189813 /* CoreTelephony.framework */; };
+		0A27CF21162075A800189813 /* CrappGottaGoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF1F162075A800189813 /* CrappGottaGoViewController.m */; };
+		0A27CF22162075A800189813 /* CrappGottaGoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF20162075A800189813 /* CrappGottaGoViewController.xib */; };
+		0A27CF2B1620767000189813 /* CrappSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF291620767000189813 /* CrappSearchViewController.m */; };
+		0A27CF2C1620767000189813 /* CrappSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF2A1620767000189813 /* CrappSearchViewController.xib */; };
+		0A27CF301620769D00189813 /* CrappRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF2E1620769D00189813 /* CrappRatingViewController.m */; };
+		0A27CF311620769D00189813 /* CrappRatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF2F1620769D00189813 /* CrappRatingViewController.xib */; };
+		0A27CF36162076B300189813 /* CrappLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF34162076B300189813 /* CrappLogViewController.m */; };
+		0A27CF37162076B300189813 /* CrappLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF35162076B300189813 /* CrappLogViewController.xib */; };
+		0A27CF3B162076DA00189813 /* CrappEntertainmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF39162076DA00189813 /* CrappEntertainmentViewController.m */; };
+		0A27CF3C162076DA00189813 /* CrappEntertainmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF3A162076DA00189813 /* CrappEntertainmentViewController.xib */; };
+		0A27CF40162077CB00189813 /* CrappAroundMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF3E162077CA00189813 /* CrappAroundMeViewController.m */; };
+		0A27CF41162077CB00189813 /* CrappAroundMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF3F162077CB00189813 /* CrappAroundMeViewController.xib */; };
+		0A27CF451620782D00189813 /* CrappVirtualStallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF431620782D00189813 /* CrappVirtualStallViewController.m */; };
+		0A27CF461620782D00189813 /* CrappVirtualStallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF441620782D00189813 /* CrappVirtualStallViewController.xib */; };
+		0A27CF4D1620792000189813 /* CrappNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF4B1620792000189813 /* CrappNewsViewController.m */; };
+		0A27CF4E1620792000189813 /* CrappNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF4C1620792000189813 /* CrappNewsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +60,35 @@
 		0A27CEF81620623300189813 /* CrappViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrappViewController.m; sourceTree = "<group>"; };
 		0A27CEFB1620623300189813 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CrappViewController_iPhone.xib; sourceTree = "<group>"; };
 		0A27CEFE1620623300189813 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CrappViewController_iPad.xib; sourceTree = "<group>"; };
-		0A27CF0C162062DB00189813 /* ESPN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ESPN.framework; sourceTree = "<group>"; };
+		0A27CF0C162062DB00189813 /* ESPN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESPN.framework; path = Crapp/ESPN.framework; sourceTree = "<group>"; };
 		0A27CF0E162062F300189813 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0A27CF10162062F900189813 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0A27CF161620739B00189813 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A27CF19162073A900189813 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0A27CF1E162075A700189813 /* CrappGottaGoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappGottaGoViewController.h; sourceTree = "<group>"; };
+		0A27CF1F162075A800189813 /* CrappGottaGoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappGottaGoViewController.m; sourceTree = "<group>"; };
+		0A27CF20162075A800189813 /* CrappGottaGoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappGottaGoViewController.xib; sourceTree = "<group>"; };
+		0A27CF281620767000189813 /* CrappSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappSearchViewController.h; sourceTree = "<group>"; };
+		0A27CF291620767000189813 /* CrappSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappSearchViewController.m; sourceTree = "<group>"; };
+		0A27CF2A1620767000189813 /* CrappSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappSearchViewController.xib; sourceTree = "<group>"; };
+		0A27CF2D1620769D00189813 /* CrappRatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappRatingViewController.h; sourceTree = "<group>"; };
+		0A27CF2E1620769D00189813 /* CrappRatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappRatingViewController.m; sourceTree = "<group>"; };
+		0A27CF2F1620769D00189813 /* CrappRatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappRatingViewController.xib; sourceTree = "<group>"; };
+		0A27CF33162076B300189813 /* CrappLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappLogViewController.h; sourceTree = "<group>"; };
+		0A27CF34162076B300189813 /* CrappLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappLogViewController.m; sourceTree = "<group>"; };
+		0A27CF35162076B300189813 /* CrappLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappLogViewController.xib; sourceTree = "<group>"; };
+		0A27CF38162076DA00189813 /* CrappEntertainmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappEntertainmentViewController.h; sourceTree = "<group>"; };
+		0A27CF39162076DA00189813 /* CrappEntertainmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappEntertainmentViewController.m; sourceTree = "<group>"; };
+		0A27CF3A162076DA00189813 /* CrappEntertainmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappEntertainmentViewController.xib; sourceTree = "<group>"; };
+		0A27CF3D162077CA00189813 /* CrappAroundMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappAroundMeViewController.h; sourceTree = "<group>"; };
+		0A27CF3E162077CA00189813 /* CrappAroundMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappAroundMeViewController.m; sourceTree = "<group>"; };
+		0A27CF3F162077CB00189813 /* CrappAroundMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappAroundMeViewController.xib; sourceTree = "<group>"; };
+		0A27CF421620782D00189813 /* CrappVirtualStallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappVirtualStallViewController.h; sourceTree = "<group>"; };
+		0A27CF431620782D00189813 /* CrappVirtualStallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappVirtualStallViewController.m; sourceTree = "<group>"; };
+		0A27CF441620782D00189813 /* CrappVirtualStallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappVirtualStallViewController.xib; sourceTree = "<group>"; };
+		0A27CF4A1620792000189813 /* CrappNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappNewsViewController.h; sourceTree = "<group>"; };
+		0A27CF4B1620792000189813 /* CrappNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappNewsViewController.m; sourceTree = "<group>"; };
+		0A27CF4C1620792000189813 /* CrappNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappNewsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A27CF1A162073A900189813 /* CoreTelephony.framework in Frameworks */,
+				0A27CF171620739B00189813 /* Security.framework in Frameworks */,
 				0A27CF11162062F900189813 /* SystemConfiguration.framework in Frameworks */,
 				0A27CF0F162062F300189813 /* CoreData.framework in Frameworks */,
 				0A27CEE01620623300189813 /* UIKit.framework in Frameworks */,
@@ -67,9 +113,13 @@
 		0A27CED01620623300189813 = {
 			isa = PBXGroup;
 			children = (
+				0A27CF19162073A900189813 /* CoreTelephony.framework */,
+				0A27CF161620739B00189813 /* Security.framework */,
 				0A27CF10162062F900189813 /* SystemConfiguration.framework */,
 				0A27CF0E162062F300189813 /* CoreData.framework */,
+				0A27CF0C162062DB00189813 /* ESPN.framework */,
 				0A27CEE51620623300189813 /* Crapp */,
+				0A27CEE61620623300189813 /* Supporting Files */,
 				0A27CEDE1620623300189813 /* Frameworks */,
 				0A27CEDC1620623300189813 /* Products */,
 			);
@@ -96,14 +146,20 @@
 		0A27CEE51620623300189813 /* Crapp */ = {
 			isa = PBXGroup;
 			children = (
-				0A27CF0C162062DB00189813 /* ESPN.framework */,
+				0A27CF491620791200189813 /* News */,
+				0A27CF481620787200189813 /* Around Me */,
+				0A27CF471620785C00189813 /* Virtual Stall */,
+				0A27CF271620765D00189813 /* Map */,
+				0A27CF261620763100189813 /* Ratings */,
+				0A27CF251620762500189813 /* Log */,
+				0A27CF241620761D00189813 /* Entertainment */,
+				0A27CF231620760F00189813 /* Gotta Go */,
 				0A27CEEE1620623300189813 /* CrappAppDelegate.h */,
 				0A27CEEF1620623300189813 /* CrappAppDelegate.m */,
 				0A27CEF71620623300189813 /* CrappViewController.h */,
 				0A27CEF81620623300189813 /* CrappViewController.m */,
 				0A27CEFA1620623300189813 /* CrappViewController_iPhone.xib */,
 				0A27CEFD1620623300189813 /* CrappViewController_iPad.xib */,
-				0A27CEE61620623300189813 /* Supporting Files */,
 			);
 			path = Crapp;
 			sourceTree = "<group>";
@@ -120,6 +176,87 @@
 				0A27CEF51620623300189813 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = Crapp;
+			sourceTree = "<group>";
+		};
+		0A27CF231620760F00189813 /* Gotta Go */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF1E162075A700189813 /* CrappGottaGoViewController.h */,
+				0A27CF1F162075A800189813 /* CrappGottaGoViewController.m */,
+				0A27CF20162075A800189813 /* CrappGottaGoViewController.xib */,
+			);
+			name = "Gotta Go";
+			sourceTree = "<group>";
+		};
+		0A27CF241620761D00189813 /* Entertainment */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF38162076DA00189813 /* CrappEntertainmentViewController.h */,
+				0A27CF39162076DA00189813 /* CrappEntertainmentViewController.m */,
+				0A27CF3A162076DA00189813 /* CrappEntertainmentViewController.xib */,
+			);
+			name = Entertainment;
+			sourceTree = "<group>";
+		};
+		0A27CF251620762500189813 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF33162076B300189813 /* CrappLogViewController.h */,
+				0A27CF34162076B300189813 /* CrappLogViewController.m */,
+				0A27CF35162076B300189813 /* CrappLogViewController.xib */,
+			);
+			name = Log;
+			sourceTree = "<group>";
+		};
+		0A27CF261620763100189813 /* Ratings */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF2D1620769D00189813 /* CrappRatingViewController.h */,
+				0A27CF2E1620769D00189813 /* CrappRatingViewController.m */,
+				0A27CF2F1620769D00189813 /* CrappRatingViewController.xib */,
+			);
+			name = Ratings;
+			sourceTree = "<group>";
+		};
+		0A27CF271620765D00189813 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF281620767000189813 /* CrappSearchViewController.h */,
+				0A27CF291620767000189813 /* CrappSearchViewController.m */,
+				0A27CF2A1620767000189813 /* CrappSearchViewController.xib */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		0A27CF471620785C00189813 /* Virtual Stall */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF421620782D00189813 /* CrappVirtualStallViewController.h */,
+				0A27CF431620782D00189813 /* CrappVirtualStallViewController.m */,
+				0A27CF441620782D00189813 /* CrappVirtualStallViewController.xib */,
+			);
+			name = "Virtual Stall";
+			sourceTree = "<group>";
+		};
+		0A27CF481620787200189813 /* Around Me */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF3D162077CA00189813 /* CrappAroundMeViewController.h */,
+				0A27CF3E162077CA00189813 /* CrappAroundMeViewController.m */,
+				0A27CF3F162077CB00189813 /* CrappAroundMeViewController.xib */,
+			);
+			name = "Around Me";
+			sourceTree = "<group>";
+		};
+		0A27CF491620791200189813 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF4A1620792000189813 /* CrappNewsViewController.h */,
+				0A27CF4B1620792000189813 /* CrappNewsViewController.m */,
+				0A27CF4C1620792000189813 /* CrappNewsViewController.xib */,
+			);
+			name = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +317,14 @@
 				0A27CEF61620623300189813 /* Default-568h@2x.png in Resources */,
 				0A27CEFC1620623300189813 /* CrappViewController_iPhone.xib in Resources */,
 				0A27CEFF1620623300189813 /* CrappViewController_iPad.xib in Resources */,
+				0A27CF22162075A800189813 /* CrappGottaGoViewController.xib in Resources */,
+				0A27CF2C1620767000189813 /* CrappSearchViewController.xib in Resources */,
+				0A27CF311620769D00189813 /* CrappRatingViewController.xib in Resources */,
+				0A27CF37162076B300189813 /* CrappLogViewController.xib in Resources */,
+				0A27CF3C162076DA00189813 /* CrappEntertainmentViewController.xib in Resources */,
+				0A27CF41162077CB00189813 /* CrappAroundMeViewController.xib in Resources */,
+				0A27CF461620782D00189813 /* CrappVirtualStallViewController.xib in Resources */,
+				0A27CF4E1620792000189813 /* CrappNewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +338,14 @@
 				0A27CEEC1620623300189813 /* main.m in Sources */,
 				0A27CEF01620623300189813 /* CrappAppDelegate.m in Sources */,
 				0A27CEF91620623300189813 /* CrappViewController.m in Sources */,
+				0A27CF21162075A800189813 /* CrappGottaGoViewController.m in Sources */,
+				0A27CF2B1620767000189813 /* CrappSearchViewController.m in Sources */,
+				0A27CF301620769D00189813 /* CrappRatingViewController.m in Sources */,
+				0A27CF36162076B300189813 /* CrappLogViewController.m in Sources */,
+				0A27CF3B162076DA00189813 /* CrappEntertainmentViewController.m in Sources */,
+				0A27CF40162077CB00189813 /* CrappAroundMeViewController.m in Sources */,
+				0A27CF451620782D00189813 /* CrappVirtualStallViewController.m in Sources */,
+				0A27CF4D1620792000189813 /* CrappNewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +477,7 @@
 				0A27CF041620623300189813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
