@@ -11,15 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121006181302) do
-
-  create_table "bathroom_types", :force => true do |t|
-    t.string   "type"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+ActiveRecord::Schema.define(:version => 20121006185011) do
 
   create_table "bathrooms", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "lat"
+    t.string   "lng"
     t.boolean  "isHandicapAccessible"
     t.boolean  "isPublic"
     t.boolean  "isFamily"
@@ -30,24 +31,21 @@ ActiveRecord::Schema.define(:version => 20121006181302) do
     t.boolean  "hasAttendent"
     t.boolean  "hasSignage"
     t.boolean  "hasWifi"
-    t.integer  "venue_id"
-    t.integer  "BathroomType_id"
+    t.integer  "bathroomtype_id"
     t.datetime "created_at",           :null => false
     t.datetime "updated_at",           :null => false
-    t.string   "lat"
-    t.string   "longt"
-    t.string   "name"
-    t.string   "address"
-    t.string   "city"
-    t.string   "state"
-    t.string   "zip"
   end
 
-  add_index "bathrooms", ["BathroomType_id"], :name => "index_bathrooms_on_BathroomType_id"
-  add_index "bathrooms", ["venue_id"], :name => "index_bathrooms_on_venue_id"
+  add_index "bathrooms", ["bathroomtype_id"], :name => "index_bathrooms_on_bathroomtype_id"
+
+  create_table "bathroomtypes", :force => true do |t|
+    t.string   "btype"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "reviews", :force => true do |t|
-    t.text     "reviewText"
+    t.string   "reviewtext"
     t.integer  "bathroom_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
@@ -55,29 +53,19 @@ ActiveRecord::Schema.define(:version => 20121006181302) do
 
   add_index "reviews", ["bathroom_id"], :name => "index_reviews_on_bathroom_id"
 
-  create_table "score_types", :force => true do |t|
-    t.string   "type"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "scores", :force => true do |t|
     t.integer  "value"
     t.integer  "bathroom_id"
-    t.integer  "ScoreType_id"
+    t.integer  "scoretype_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
 
-  add_index "scores", ["ScoreType_id"], :name => "index_scores_on_ScoreType_id"
   add_index "scores", ["bathroom_id"], :name => "index_scores_on_bathroom_id"
+  add_index "scores", ["scoretype_id"], :name => "index_scores_on_scoretype_id"
 
-  create_table "venues", :force => true do |t|
-    t.string   "name"
-    t.string   "address"
-    t.string   "city"
-    t.string   "state"
-    t.string   "zip"
+  create_table "scoretypes", :force => true do |t|
+    t.string   "stype"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

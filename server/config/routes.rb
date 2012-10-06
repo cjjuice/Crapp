@@ -1,4 +1,4 @@
-CrappyApi::Application.routes.draw do
+Server::Application.routes.draw do
   get "bathrooms/add"
 
   get "bathrooms/fetch"
@@ -11,7 +11,7 @@ CrappyApi::Application.routes.draw do
   # first created -> highest priority.
 
   # Sample of regular route:
-    # match 'bathrooms/add/:qs' => 'catalog#view'
+  #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
