@@ -51,6 +51,8 @@
 		0A27CF6D16209C6800189813 /* CrappLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF6C16209C6700189813 /* CrappLocationManager.m */; };
 		0A27CF701620A0A900189813 /* CrappBathroomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF6F1620A0A900189813 /* CrappBathroomCellView.m */; };
 		0A27CF721620A17800189813 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF711620A17700189813 /* CoreLocation.framework */; };
+		0A27CF751620B14600189813 /* CrappMapContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF741620B14400189813 /* CrappMapContainer.m */; };
+		0A27CF771620B25900189813 /* map.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF761620B25800189813 /* map.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +121,9 @@
 		0A27CF6E1620A0A900189813 /* CrappBathroomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappBathroomCellView.h; sourceTree = "<group>"; };
 		0A27CF6F1620A0A900189813 /* CrappBathroomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappBathroomCellView.m; sourceTree = "<group>"; };
 		0A27CF711620A17700189813 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0A27CF731620B14300189813 /* CrappMapContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappMapContainer.h; sourceTree = "<group>"; };
+		0A27CF741620B14400189813 /* CrappMapContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappMapContainer.m; sourceTree = "<group>"; };
+		0A27CF761620B25800189813 /* map.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +190,8 @@
 				0A27CF6C16209C6700189813 /* CrappLocationManager.m */,
 				0A27CF62162096B100189813 /* CCEFeedManager.h */,
 				0A27CF63162096B200189813 /* CCEFeedManager.m */,
+				0A27CF731620B14300189813 /* CrappMapContainer.h */,
+				0A27CF741620B14400189813 /* CrappMapContainer.m */,
 				0A27CF4F16207E4400189813 /* Add Rating */,
 				0A27CF491620791200189813 /* News */,
 				0A27CF481620787200189813 /* Around Me */,
@@ -200,6 +207,7 @@
 				0A27CEF81620623300189813 /* CrappViewController.m */,
 				0A27CEFA1620623300189813 /* CrappViewController_iPhone.xib */,
 				0A27CEFD1620623300189813 /* CrappViewController_iPad.xib */,
+				0A27CF761620B25800189813 /* map.txt */,
 			);
 			path = Crapp;
 			sourceTree = "<group>";
@@ -384,6 +392,7 @@
 				0A27CF461620782D00189813 /* CrappVirtualStallViewController.xib in Resources */,
 				0A27CF4E1620792000189813 /* CrappNewsViewController.xib in Resources */,
 				0A27CF5416207E5700189813 /* CrappAddRatingViewController.xib in Resources */,
+				0A27CF771620B25900189813 /* map.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +423,7 @@
 				0A27CF6A162098C600189813 /* CrappFeedHandler.m in Sources */,
 				0A27CF6D16209C6800189813 /* CrappLocationManager.m in Sources */,
 				0A27CF701620A0A900189813 /* CrappBathroomCellView.m in Sources */,
+				0A27CF751620B14600189813 /* CrappMapContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

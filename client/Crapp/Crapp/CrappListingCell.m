@@ -9,6 +9,8 @@
 #import "CrappBathroomCellView.h"
 #import "CrappListingCell.h"
 
+#define kViewTag 6543
+
 @implementation CrappListingCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -29,12 +31,17 @@
 
 -(void)setAttributesWith:(NSDictionary *)dictionary
 {
-    CrappBathroomCellView *view = [[CrappBathroomCellView alloc]initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, self.contentView.frame.size.height)];
-    
+    CrappBathroomCellView *view = [[CrappBathroomCellView alloc]initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, 100)];
+    view.tag = kViewTag;
     [view setAttributesWith:dictionary];
     [self.contentView addSubview:view];
     [view release];
     
+}
+
+-(void)removeInnerview
+{
+    [[self.contentView viewWithTag:kViewTag]removeFromSuperview];
 }
 
 @end

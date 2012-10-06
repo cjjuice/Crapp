@@ -11,5 +11,6 @@
 @interface CrappListingCell : UITableViewCell
 
 -(void)setAttributesWith:(NSDictionary *)dictionary;
+-(void)removeInnerview;
 
 @end
