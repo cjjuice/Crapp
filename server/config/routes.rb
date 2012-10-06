@@ -1,9 +1,17 @@
 CrappyApi::Application.routes.draw do
+  get "bathrooms/add"
+
+  get "bathrooms/fetch"
+
+  get "bathrooms/update"
+
+  get "bathrooms/delete"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+    # match 'bathrooms/add/:qs' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
