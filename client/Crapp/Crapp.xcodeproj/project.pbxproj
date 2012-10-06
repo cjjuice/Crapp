@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A27CEE01620623300189813 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CEDF1620623300189813 /* UIKit.framework */; };
+		0A27CEE21620623300189813 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CEE11620623300189813 /* Foundation.framework */; };
+		0A27CEE41620623300189813 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CEE31620623300189813 /* CoreGraphics.framework */; };
+		0A27CEEA1620623300189813 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEE81620623300189813 /* InfoPlist.strings */; };
+		0A27CEEC1620623300189813 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CEEB1620623300189813 /* main.m */; };
+		0A27CEF01620623300189813 /* CrappAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CEEF1620623300189813 /* CrappAppDelegate.m */; };
+		0A27CEF21620623300189813 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEF11620623300189813 /* Default.png */; };
+		0A27CEF41620623300189813 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEF31620623300189813 /* Default@2x.png */; };
+		0A27CEF61620623300189813 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEF51620623300189813 /* Default-568h@2x.png */; };
+		0A27CEF91620623300189813 /* CrappViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CEF81620623300189813 /* CrappViewController.m */; };
+		0A27CEFC1620623300189813 /* CrappViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEFA1620623300189813 /* CrappViewController_iPhone.xib */; };
+		0A27CEFF1620623300189813 /* CrappViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEFD1620623300189813 /* CrappViewController_iPad.xib */; };
+		0A27CF0D162062DB00189813 /* ESPN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF0C162062DB00189813 /* ESPN.framework */; };
+		0A27CF0F162062F300189813 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF0E162062F300189813 /* CoreData.framework */; };
+		0A27CF11162062F900189813 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF10162062F900189813 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A27CEDB1620623300189813 /* Crapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A27CEDF1620623300189813 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0A27CEE11620623300189813 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A27CEE31620623300189813 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A27CEE71620623300189813 /* Crapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Crapp-Info.plist"; sourceTree = "<group>"; };
+		0A27CEE91620623300189813 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A27CEEB1620623300189813 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A27CEED1620623300189813 /* Crapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crapp-Prefix.pch"; sourceTree = "<group>"; };
+		0A27CEEE1620623300189813 /* CrappAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrappAppDelegate.h; sourceTree = "<group>"; };
+		0A27CEEF1620623300189813 /* CrappAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrappAppDelegate.m; sourceTree = "<group>"; };
+		0A27CEF11620623300189813 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0A27CEF31620623300189813 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0A27CEF51620623300189813 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0A27CEF71620623300189813 /* CrappViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrappViewController.h; sourceTree = "<group>"; };
+		0A27CEF81620623300189813 /* CrappViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrappViewController.m; sourceTree = "<group>"; };
+		0A27CEFB1620623300189813 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CrappViewController_iPhone.xib; sourceTree = "<group>"; };
+		0A27CEFE1620623300189813 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CrappViewController_iPad.xib; sourceTree = "<group>"; };
+		0A27CF0C162062DB00189813 /* ESPN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ESPN.framework; sourceTree = "<group>"; };
+		0A27CF0E162062F300189813 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A27CF10162062F900189813 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A27CED81620623300189813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A27CF11162062F900189813 /* SystemConfiguration.framework in Frameworks */,
+				0A27CF0F162062F300189813 /* CoreData.framework in Frameworks */,
+				0A27CEE01620623300189813 /* UIKit.framework in Frameworks */,
+				0A27CEE21620623300189813 /* Foundation.framework in Frameworks */,
+				0A27CEE41620623300189813 /* CoreGraphics.framework in Frameworks */,
+				0A27CF0D162062DB00189813 /* ESPN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A27CED01620623300189813 = {
+			isa = PBXGroup;
+			children = (
+				0A27CF10162062F900189813 /* SystemConfiguration.framework */,
+				0A27CF0E162062F300189813 /* CoreData.framework */,
+				0A27CEE51620623300189813 /* Crapp */,
+				0A27CEDE1620623300189813 /* Frameworks */,
+				0A27CEDC1620623300189813 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A27CEDC1620623300189813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CEDB1620623300189813 /* Crapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A27CEDE1620623300189813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CEDF1620623300189813 /* UIKit.framework */,
+				0A27CEE11620623300189813 /* Foundation.framework */,
+				0A27CEE31620623300189813 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A27CEE51620623300189813 /* Crapp */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF0C162062DB00189813 /* ESPN.framework */,
+				0A27CEEE1620623300189813 /* CrappAppDelegate.h */,
+				0A27CEEF1620623300189813 /* CrappAppDelegate.m */,
+				0A27CEF71620623300189813 /* CrappViewController.h */,
+				0A27CEF81620623300189813 /* CrappViewController.m */,
+				0A27CEFA1620623300189813 /* CrappViewController_iPhone.xib */,
+				0A27CEFD1620623300189813 /* CrappViewController_iPad.xib */,
+				0A27CEE61620623300189813 /* Supporting Files */,
+			);
+			path = Crapp;
+			sourceTree = "<group>";
+		};
+		0A27CEE61620623300189813 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CEE71620623300189813 /* Crapp-Info.plist */,
+				0A27CEE81620623300189813 /* InfoPlist.strings */,
+				0A27CEEB1620623300189813 /* main.m */,
+				0A27CEED1620623300189813 /* Crapp-Prefix.pch */,
+				0A27CEF11620623300189813 /* Default.png */,
+				0A27CEF31620623300189813 /* Default@2x.png */,
+				0A27CEF51620623300189813 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A27CEDA1620623300189813 /* Crapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A27CF021620623300189813 /* Build configuration list for PBXNativeTarget "Crapp" */;
+			buildPhases = (
+				0A27CED71620623300189813 /* Sources */,
+				0A27CED81620623300189813 /* Frameworks */,
+				0A27CED91620623300189813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crapp;
+			productName = Crapp;
+			productReference = 0A27CEDB1620623300189813 /* Crapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A27CED21620623300189813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Crapp;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Crapp!";
+			};
+			buildConfigurationList = 0A27CED51620623300189813 /* Build configuration list for PBXProject "Crapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A27CED01620623300189813;
+			productRefGroup = 0A27CEDC1620623300189813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A27CEDA1620623300189813 /* Crapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A27CED91620623300189813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A27CEEA1620623300189813 /* InfoPlist.strings in Resources */,
+				0A27CEF21620623300189813 /* Default.png in Resources */,
+				0A27CEF41620623300189813 /* Default@2x.png in Resources */,
+				0A27CEF61620623300189813 /* Default-568h@2x.png in Resources */,
+				0A27CEFC1620623300189813 /* CrappViewController_iPhone.xib in Resources */,
+				0A27CEFF1620623300189813 /* CrappViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A27CED71620623300189813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A27CEEC1620623300189813 /* main.m in Sources */,
+				0A27CEF01620623300189813 /* CrappAppDelegate.m in Sources */,
+				0A27CEF91620623300189813 /* CrappViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A27CEE81620623300189813 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A27CEE91620623300189813 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A27CEFA1620623300189813 /* CrappViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A27CEFB1620623300189813 /* en */,
+			);
+			name = CrappViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		0A27CEFD1620623300189813 /* CrappViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A27CEFE1620623300189813 /* en */,
+			);
+			name = CrappViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A27CF001620623300189813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A27CF011620623300189813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A27CF031620623300189813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Crapp\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Crapp/Crapp-Prefix.pch";
+				INFOPLIST_FILE = "Crapp/Crapp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A27CF041620623300189813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Crapp\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Crapp/Crapp-Prefix.pch";
+				INFOPLIST_FILE = "Crapp/Crapp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A27CED51620623300189813 /* Build configuration list for PBXProject "Crapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A27CF001620623300189813 /* Debug */,
+				0A27CF011620623300189813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A27CF021620623300189813 /* Build configuration list for PBXNativeTarget "Crapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A27CF031620623300189813 /* Debug */,
+				0A27CF041620623300189813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A27CED21620623300189813 /* Project object */;
+}
