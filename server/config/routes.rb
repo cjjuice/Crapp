@@ -1,4 +1,12 @@
 Server::Application.routes.draw do
+  get "bathrooms/add"
+
+  get "bathrooms/fetch"
+
+  get "bathrooms/update"
+
+  get "bathrooms/delete"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
