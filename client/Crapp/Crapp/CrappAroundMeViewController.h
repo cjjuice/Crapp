@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CrappAroundMeViewController : UIViewController
+@interface CrappAroundMeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

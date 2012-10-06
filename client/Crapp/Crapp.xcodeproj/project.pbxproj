@@ -40,6 +40,17 @@
 		0A27CF461620782D00189813 /* CrappVirtualStallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF441620782D00189813 /* CrappVirtualStallViewController.xib */; };
 		0A27CF4D1620792000189813 /* CrappNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF4B1620792000189813 /* CrappNewsViewController.m */; };
 		0A27CF4E1620792000189813 /* CrappNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF4C1620792000189813 /* CrappNewsViewController.xib */; };
+		0A27CF5316207E5700189813 /* CrappAddRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF5116207E5700189813 /* CrappAddRatingViewController.m */; };
+		0A27CF5416207E5700189813 /* CrappAddRatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF5216207E5700189813 /* CrappAddRatingViewController.xib */; };
+		0A27CF571620828F00189813 /* CrappAddRatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF561620828F00189813 /* CrappAddRatingCell.m */; };
+		0A27CF5A1620844E00189813 /* CrappNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF591620844E00189813 /* CrappNewsCell.m */; };
+		0A27CF5D1620852100189813 /* CrappListingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF5C1620852100189813 /* CrappListingCell.m */; };
+		0A27CF64162096B200189813 /* CCEFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF63162096B200189813 /* CCEFeedManager.m */; };
+		0A27CF671620981700189813 /* CrappModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF651620981700189813 /* CrappModel.xcdatamodeld */; };
+		0A27CF6A162098C600189813 /* CrappFeedHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF69162098C400189813 /* CrappFeedHandler.m */; };
+		0A27CF6D16209C6800189813 /* CrappLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF6C16209C6700189813 /* CrappLocationManager.m */; };
+		0A27CF701620A0A900189813 /* CrappBathroomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF6F1620A0A900189813 /* CrappBathroomCellView.m */; };
+		0A27CF721620A17800189813 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF711620A17700189813 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +100,25 @@
 		0A27CF4A1620792000189813 /* CrappNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappNewsViewController.h; sourceTree = "<group>"; };
 		0A27CF4B1620792000189813 /* CrappNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappNewsViewController.m; sourceTree = "<group>"; };
 		0A27CF4C1620792000189813 /* CrappNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappNewsViewController.xib; sourceTree = "<group>"; };
+		0A27CF5016207E5700189813 /* CrappAddRatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappAddRatingViewController.h; sourceTree = "<group>"; };
+		0A27CF5116207E5700189813 /* CrappAddRatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappAddRatingViewController.m; sourceTree = "<group>"; };
+		0A27CF5216207E5700189813 /* CrappAddRatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappAddRatingViewController.xib; sourceTree = "<group>"; };
+		0A27CF551620828F00189813 /* CrappAddRatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappAddRatingCell.h; sourceTree = "<group>"; };
+		0A27CF561620828F00189813 /* CrappAddRatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappAddRatingCell.m; sourceTree = "<group>"; };
+		0A27CF581620844E00189813 /* CrappNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappNewsCell.h; sourceTree = "<group>"; };
+		0A27CF591620844E00189813 /* CrappNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappNewsCell.m; sourceTree = "<group>"; };
+		0A27CF5B1620852100189813 /* CrappListingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappListingCell.h; sourceTree = "<group>"; };
+		0A27CF5C1620852100189813 /* CrappListingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappListingCell.m; sourceTree = "<group>"; };
+		0A27CF62162096B100189813 /* CCEFeedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEFeedManager.h; sourceTree = "<group>"; };
+		0A27CF63162096B200189813 /* CCEFeedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEFeedManager.m; sourceTree = "<group>"; };
+		0A27CF661620981700189813 /* CrappModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CrappModel.xcdatamodel; sourceTree = "<group>"; };
+		0A27CF68162098C400189813 /* CrappFeedHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappFeedHandler.h; sourceTree = "<group>"; };
+		0A27CF69162098C400189813 /* CrappFeedHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappFeedHandler.m; sourceTree = "<group>"; };
+		0A27CF6B16209C6600189813 /* CrappLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappLocationManager.h; sourceTree = "<group>"; };
+		0A27CF6C16209C6700189813 /* CrappLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappLocationManager.m; sourceTree = "<group>"; };
+		0A27CF6E1620A0A900189813 /* CrappBathroomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappBathroomCellView.h; sourceTree = "<group>"; };
+		0A27CF6F1620A0A900189813 /* CrappBathroomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappBathroomCellView.m; sourceTree = "<group>"; };
+		0A27CF711620A17700189813 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A27CF721620A17800189813 /* CoreLocation.framework in Frameworks */,
 				0A27CF1A162073A900189813 /* CoreTelephony.framework in Frameworks */,
 				0A27CF171620739B00189813 /* Security.framework in Frameworks */,
 				0A27CF11162062F900189813 /* SystemConfiguration.framework in Frameworks */,
@@ -113,6 +144,8 @@
 		0A27CED01620623300189813 = {
 			isa = PBXGroup;
 			children = (
+				0A27CF711620A17700189813 /* CoreLocation.framework */,
+				0A27CF651620981700189813 /* CrappModel.xcdatamodeld */,
 				0A27CF19162073A900189813 /* CoreTelephony.framework */,
 				0A27CF161620739B00189813 /* Security.framework */,
 				0A27CF10162062F900189813 /* SystemConfiguration.framework */,
@@ -146,6 +179,13 @@
 		0A27CEE51620623300189813 /* Crapp */ = {
 			isa = PBXGroup;
 			children = (
+				0A27CF68162098C400189813 /* CrappFeedHandler.h */,
+				0A27CF69162098C400189813 /* CrappFeedHandler.m */,
+				0A27CF6B16209C6600189813 /* CrappLocationManager.h */,
+				0A27CF6C16209C6700189813 /* CrappLocationManager.m */,
+				0A27CF62162096B100189813 /* CCEFeedManager.h */,
+				0A27CF63162096B200189813 /* CCEFeedManager.m */,
+				0A27CF4F16207E4400189813 /* Add Rating */,
 				0A27CF491620791200189813 /* News */,
 				0A27CF481620787200189813 /* Around Me */,
 				0A27CF471620785C00189813 /* Virtual Stall */,
@@ -245,6 +285,10 @@
 				0A27CF3D162077CA00189813 /* CrappAroundMeViewController.h */,
 				0A27CF3E162077CA00189813 /* CrappAroundMeViewController.m */,
 				0A27CF3F162077CB00189813 /* CrappAroundMeViewController.xib */,
+				0A27CF5B1620852100189813 /* CrappListingCell.h */,
+				0A27CF5C1620852100189813 /* CrappListingCell.m */,
+				0A27CF6E1620A0A900189813 /* CrappBathroomCellView.h */,
+				0A27CF6F1620A0A900189813 /* CrappBathroomCellView.m */,
 			);
 			name = "Around Me";
 			sourceTree = "<group>";
@@ -255,8 +299,22 @@
 				0A27CF4A1620792000189813 /* CrappNewsViewController.h */,
 				0A27CF4B1620792000189813 /* CrappNewsViewController.m */,
 				0A27CF4C1620792000189813 /* CrappNewsViewController.xib */,
+				0A27CF581620844E00189813 /* CrappNewsCell.h */,
+				0A27CF591620844E00189813 /* CrappNewsCell.m */,
 			);
 			name = News;
+			sourceTree = "<group>";
+		};
+		0A27CF4F16207E4400189813 /* Add Rating */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CF5016207E5700189813 /* CrappAddRatingViewController.h */,
+				0A27CF5116207E5700189813 /* CrappAddRatingViewController.m */,
+				0A27CF5216207E5700189813 /* CrappAddRatingViewController.xib */,
+				0A27CF551620828F00189813 /* CrappAddRatingCell.h */,
+				0A27CF561620828F00189813 /* CrappAddRatingCell.m */,
+			);
+			name = "Add Rating";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +383,7 @@
 				0A27CF41162077CB00189813 /* CrappAroundMeViewController.xib in Resources */,
 				0A27CF461620782D00189813 /* CrappVirtualStallViewController.xib in Resources */,
 				0A27CF4E1620792000189813 /* CrappNewsViewController.xib in Resources */,
+				0A27CF5416207E5700189813 /* CrappAddRatingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +405,15 @@
 				0A27CF40162077CB00189813 /* CrappAroundMeViewController.m in Sources */,
 				0A27CF451620782D00189813 /* CrappVirtualStallViewController.m in Sources */,
 				0A27CF4D1620792000189813 /* CrappNewsViewController.m in Sources */,
+				0A27CF5316207E5700189813 /* CrappAddRatingViewController.m in Sources */,
+				0A27CF571620828F00189813 /* CrappAddRatingCell.m in Sources */,
+				0A27CF5A1620844E00189813 /* CrappNewsCell.m in Sources */,
+				0A27CF5D1620852100189813 /* CrappListingCell.m in Sources */,
+				0A27CF64162096B200189813 /* CCEFeedManager.m in Sources */,
+				0A27CF671620981700189813 /* CrappModel.xcdatamodeld in Sources */,
+				0A27CF6A162098C600189813 /* CrappFeedHandler.m in Sources */,
+				0A27CF6D16209C6800189813 /* CrappLocationManager.m in Sources */,
+				0A27CF701620A0A900189813 /* CrappBathroomCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +548,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0A27CF651620981700189813 /* CrappModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0A27CF661620981700189813 /* CrappModel.xcdatamodel */,
+			);
+			currentVersion = 0A27CF661620981700189813 /* CrappModel.xcdatamodel */;
+			path = CrappModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0A27CED21620623300189813 /* Project object */;
 }

@@ -1,5 +1,5 @@
 //
-//  CrappNewsViewController.h
+//  CrappAddRatingCell.h
 //  Crapp
 //
 //  Created by Hyde, Andrew on 10/6/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CrappNewsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface CrappAddRatingCell : UITableViewCell
 
 @end
