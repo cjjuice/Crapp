@@ -1,4 +1,4 @@
 class Review < ActiveRecord::Base
   belongs_to :bathroom
-  attr_accessible :reviewText
+  attr_accessible :reviewtext
 end
