@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: crappy-api_development
+  database: crappy_development
   pool: 5
-  username: crappy-api
+  username: cbordeleau
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,9 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: crappy-api_test
+  database: crappy_test
   pool: 5
-  username: crappy-api
+  username: cbordeleau
   password:
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: crappy-api_production
-  pool: 5
-  username: crappy-api
-  password:
+
