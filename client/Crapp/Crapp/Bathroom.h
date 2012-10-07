@@ -2,7 +2,7 @@
 //  Bathroom.h
 //  Crapp
 //
-//  Created by Hyde, Andrew on 10/6/12.
+//  Created by Hyde, Andrew on 10/7/12.
 //  Copyright (c) 2012 Crapp!. All rights reserved.
 //
 
@@ -30,22 +30,23 @@
 @property (nonatomic, retain) NSString * longitude;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * state;
-@property (nonatomic, retain) NSString * zip;
 @property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSSet *scores;
+@property (nonatomic, retain) NSString * zip;
+@property (nonatomic, retain) NSString * distance;
 @property (nonatomic, retain) NSSet *reviews;
+@property (nonatomic, retain) NSSet *scores;
 @end
 
 @interface Bathroom (CoreDataGeneratedAccessors)
-
-- (void)addScoresObject:(BathroomScore *)value;
-- (void)removeScoresObject:(BathroomScore *)value;
-- (void)addScores:(NSSet *)values;
-- (void)removeScores:(NSSet *)values;
 
 - (void)addReviewsObject:(BathroomReview *)value;
 - (void)removeReviewsObject:(BathroomReview *)value;
 - (void)addReviews:(NSSet *)values;
 - (void)removeReviews:(NSSet *)values;
+
+- (void)addScoresObject:(BathroomScore *)value;
+- (void)removeScoresObject:(BathroomScore *)value;
+- (void)addScores:(NSSet *)values;
+- (void)removeScores:(NSSet *)values;
 
 @end

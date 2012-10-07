@@ -3,6 +3,7 @@
     <entity name="Bathroom" representedClassName="Bathroom" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hasAttendent" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasProductDispenser" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="hasSignage" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -41,9 +42,9 @@
         <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Bathroom" positionX="160" positionY="192" width="128" height="360"/>
-        <element name="BathroomScore" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Bathroom" positionX="160" positionY="192" width="128" height="375"/>
         <element name="BathroomReview" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="BathroomScore" positionX="160" positionY="192" width="128" height="90"/>
         <element name="NewsItem" positionX="160" positionY="192" width="128" height="120"/>
     </elements>
 </model>

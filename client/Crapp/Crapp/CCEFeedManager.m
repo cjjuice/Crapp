@@ -88,6 +88,9 @@
 //                               bathroom.type = [dict objectForKey:@"type"];
 //                           }
                            
+                           if(![[dict objectForKey:@"distance"] isKindOfClass:[NSNull class]])
+                               bathroom.distance = [NSString stringWithFormat:@"%1.2f",[[dict objectForKey:@"distance"]doubleValue]] ;
+                           
                             NSDictionary *infoDict = [dict objectForKey:@"info"];
                            if(![[infoDict objectForKey:@"address"] isKindOfClass:[NSNull class]])
                                bathroom.address = [infoDict objectForKey:@"address"];

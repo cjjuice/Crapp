@@ -30,6 +30,8 @@
         self.viewController = [[[CrappViewController alloc] initWithNibName:@"CrappViewController_iPad" bundle:nil] autorelease];
     }
     
+    self.viewController.title = @"Krapp!";
+    
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     navController.navigationBar.tintColor = [UIColor blackColor];
     self.window.rootViewController = navController;

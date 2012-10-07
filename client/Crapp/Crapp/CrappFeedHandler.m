@@ -54,7 +54,7 @@
     }
     
     //NSLog(@"%@", base);
-    base = @"http://crapp-api.herokuapp.com/bathrooms/fetch?lat=41.234&lng=-71.234";
+    base = [NSString stringWithFormat:@"http://crapp-api.herokuapp.com/bathrooms/fetch?lat=%@&lng=%@",[dictionary objectForKey:@"flat"], [dictionary objectForKey:@"flong"] ];
     [ESPN loadDataFromURL:base withBlock:^(NSData *data, NSError *error)
      {
          NSString *string = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];

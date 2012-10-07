@@ -58,7 +58,8 @@ typedef enum
     
     UIImage *image = [UIImage imageNamed:@"background.png"];
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, mainView.frame.size.width, mainView.frame.size.height)];
-    imageView.image = image;
+    //imageView.image = image;
+    imageView.backgroundColor = [UIColor whiteColor];
     [mainView addSubview:imageView];
     [imageView release];
     

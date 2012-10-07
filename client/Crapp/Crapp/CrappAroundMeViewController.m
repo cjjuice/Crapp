@@ -30,31 +30,73 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button setTitle:@"Map" forState:UIControlStateNormal];
-        [button addTarget:self action:@selector(mapButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        button.frame = CGRectMake(0, 0, 160, 50);
-        [self.view addSubview:button];
+        UISegmentedControl *control = [[UISegmentedControl alloc]initWithItems:[NSArray arrayWithObjects:@"Map", @"List", nil]];
+        control.frame = CGRectMake(-10, 0, 340, 35);
+        control.tintColor = [UIColor darkGrayColor];
+        control.segmentedControlStyle = UISegmentedControlStyleBar;
+        control.selectedSegmentIndex = 1;
+        [control addTarget:self action:@selector(controlChanged:) forControlEvents:UIControlEventValueChanged];
+        [self.view addSubview:control];
+        [control release];
         
-        button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button setTitle:@"List" forState:UIControlStateNormal];
-        [button addTarget:self action:@selector(listButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-        button.frame = CGRectMake(160, 0, 160, 50);
-        [self.view addSubview:button];
+        
+        
+//        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//        [button setTitle:@"Map" forState:UIControlStateNormal];
+//        [button addTarget:self action:@selector(mapButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+//        button.frame = CGRectMake(0, 0, 160, 50);
+//        [self.view addSubview:button];
+//        
+//        button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//        [button setTitle:@"List" forState:UIControlStateNormal];
+//        [button addTarget:self action:@selector(listButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+//        button.frame = CGRectMake(160, 0, 160, 50);
+//        [self.view addSubview:button];
         
         UIBarButtonItem * addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBathroom:)];
         [self.navigationItem setRightBarButtonItem:addButton];
         [addButton release];
         
-        [CrappFeedHandler getBathroomsByParameters:[NSDictionary dictionaryWithObjectsAndKeys:@"41.234", @"flat", @"-71.234", @"flong" , nil] withBlock:^(NSDictionary *data)
+        
+        UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        indicator.frame = CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 50, 50) ;
+        [self.view addSubview:indicator];
+        
+        [CrappFeedHandler getBathroomsByParameters:[NSDictionary dictionaryWithObjectsAndKeys:@"41.819870", @"flat", @"-71.412601", @"flong", nil] withBlock:^(NSDictionary *data)
          {
+             
              [CCEFeedManager parseBathroomFeedWithDictionary:data andBlock:^(NSError *error)
               {
+                  [indicator removeFromSuperview];
+                  [indicator release];
                    [self.view addSubview:[self createTableView]];
               }];
          }];
     }
     return self;
+}
+
+-(IBAction)controlChanged:(id)sender
+{
+    [[self.view viewWithTag:kCurrentViewTag]removeFromSuperview];
+    
+    UISegmentedControl *control = (UISegmentedControl *)sender;
+    NSLog(@"%d", control.selectedSegmentIndex);
+    switch(control.selectedSegmentIndex)
+    {
+        case 0:
+             [self.view addSubview:[self createMapView]];
+            break;
+            
+        case 1:
+            [self.view addSubview:[self createTableView]];
+            break;
+            
+        default:
+            break;
+            
+    }
+    
 }
 
 -(IBAction)addBathroom:(id)sender
@@ -67,15 +109,15 @@
 
 -(IBAction)mapButtonPressed:(id)sender
 {
-    [[self.view viewWithTag:kCurrentViewTag]removeFromSuperview];
-    [self.view addSubview:[self createMapView]];
+    
+   
 
 }
 
 -(IBAction)listButtonPressed:(id)sender
 {
     [[self.view viewWithTag:kCurrentViewTag]removeFromSuperview];
-    [self.view addSubview:[self createTableView]];
+    
 }
 
 -(void)updateArray
@@ -90,7 +132,7 @@
 {
     [self updateArray];
     
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height-50)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 35, self.view.frame.size.width, self.view.frame.size.height-50)];
     view.tag = kCurrentViewTag;
     
     UITableView *tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height) style:UITableViewStylePlain];
@@ -104,7 +146,7 @@
 
 -(UIView *)createMapView
 {
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 35, self.view.frame.size.width, self.view.frame.size.height)];
     view.tag = kCurrentViewTag;
     
     NSMutableArray *array = [[NSMutableArray alloc]init];

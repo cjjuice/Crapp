@@ -2,7 +2,7 @@
 //  Bathroom.m
 //  Crapp
 //
-//  Created by Hyde, Andrew on 10/6/12.
+//  Created by Hyde, Andrew on 10/7/12.
 //  Copyright (c) 2012 Crapp!. All rights reserved.
 //
 
@@ -30,9 +30,10 @@
 @dynamic longitude;
 @dynamic name;
 @dynamic state;
-@dynamic zip;
 @dynamic type;
-@dynamic scores;
+@dynamic zip;
+@dynamic distance;
 @dynamic reviews;
+@dynamic scores;
 
 @end

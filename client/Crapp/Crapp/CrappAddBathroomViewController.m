@@ -68,10 +68,10 @@
     
     UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(20, 90, 280, 300)];
     
-    [scrollView addSubview:[self createCheckBoxWithName:@"star.png" andOrigin:0]];
-    [scrollView addSubview:[self createCheckBoxWithName:@"star.png" andOrigin:50]];
-    [scrollView addSubview:[self createCheckBoxWithName:@"star.png" andOrigin:100]];
-    [scrollView addSubview:[self createCheckBoxWithName:@"star.png" andOrigin:150]];
+    [scrollView addSubview:[self createCheckBoxWithName:@"star" andOrigin:0]];
+    [scrollView addSubview:[self createCheckBoxWithName:@"star" andOrigin:50]];
+    [scrollView addSubview:[self createCheckBoxWithName:@"star" andOrigin:100]];
+    [scrollView addSubview:[self createCheckBoxWithName:@"star" andOrigin:150]];
     
     
     [view addSubview:scrollView];
@@ -92,7 +92,7 @@
     UIView *main = [self.view viewWithTag:1234];
     UITextField *field = (UITextField *)[main viewWithTag:65];
     
-    [CrappFeedHandler addBathroomWith:[NSDictionary dictionaryWithObjectsAndKeys:field.text, @"name", @"41.234", @"lat", @"-71.234", @"lng", @"yes", @"isPublic", nil]];
+    [CrappFeedHandler addBathroomWith:[NSDictionary dictionaryWithObjectsAndKeys:field.text, @"name", @"41.819870", @"lat", @"-71.412601", @"lng", @"yes", @"isPublic", nil]];
 }
 
 -(UIView *)createCheckBoxWithName:(NSString *)name andOrigin:(int)origin
