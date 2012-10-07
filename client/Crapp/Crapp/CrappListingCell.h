@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Bathroom.h"
 
 @interface CrappListingCell : UITableViewCell
 
--(void)setAttributesWith:(NSDictionary *)dictionary;
+-(void)setAttributesWith:(Bathroom *)bathroom;
 -(void)removeInnerview;
 
 @end

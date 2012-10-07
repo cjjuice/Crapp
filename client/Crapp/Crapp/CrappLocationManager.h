@@ -15,7 +15,9 @@
 }
 
 +(id)sharedInstance;
-
+-(void)start;
++(NSString *)getLat;
++(NSString *)getLong;
 +(NSDictionary *)getCurrentLocation;
 
 @property(nonatomic, retain)CLLocationManager *manager;

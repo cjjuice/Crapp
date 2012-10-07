@@ -20,5 +20,6 @@ typedef enum
 @interface CCEFeedManager : NSObject
 
 +(void)getFeedWithName:(NSString *)name Type:(FeedType)type andBlock:(FeedLoadingBlock)block;
++(void)parseBathroomFeedWithDictionary:(NSDictionary *)dictionary andBlock:(FeedParsingBlock)block;
 
 @end

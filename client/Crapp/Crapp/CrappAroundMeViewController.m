@@ -9,6 +9,13 @@
 #import "CrappAroundMeViewController.h"
 #import "CrappListingCell.h"
 #import "CrappMapContainer.h"
+#import "CrappLocationManager.h"
+#import "CrappFeedHandler.h"
+#import "CCEFeedManager.h"
+#import <ESPN/ESPN.h>
+#import "Bathroom.h"
+#import "CrappDetailViewController.h"
+#import "CrappAddBathroomViewController.h"
 
 #define kCurrentViewTag 12345
 
@@ -35,12 +42,27 @@
         button.frame = CGRectMake(160, 0, 160, 50);
         [self.view addSubview:button];
         
-        [self.view addSubview:[self createMapView]];
-
+        UIBarButtonItem * addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBathroom:)];
+        [self.navigationItem setRightBarButtonItem:addButton];
+        [addButton release];
         
-        // Custom initialization
+        [CrappFeedHandler getBathroomsByParameters:[NSDictionary dictionaryWithObjectsAndKeys:@"41.234", @"flat", @"-71.234", @"flong" , nil] withBlock:^(NSDictionary *data)
+         {
+             [CCEFeedManager parseBathroomFeedWithDictionary:data andBlock:^(NSError *error)
+              {
+                   [self.view addSubview:[self createTableView]];
+              }];
+         }];
     }
     return self;
+}
+
+-(IBAction)addBathroom:(id)sender
+{
+    CrappAddBathroomViewController *add = [[CrappAddBathroomViewController alloc]init];
+    [self presentViewController:add animated:YES completion:^{
+        //Nothing
+    }];
 }
 
 -(IBAction)mapButtonPressed:(id)sender
@@ -56,9 +78,19 @@
     [self.view addSubview:[self createTableView]];
 }
 
+-(void)updateArray
+{
+    NSArray *array = [ESPN fetchForEntity:@"Bathroom" withPredicate:nil andSortDescriptor:nil];
+    
+    self.currentArray = array;
+    
+}
+
 -(UIView *)createTableView
 {
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height)];
+    [self updateArray];
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, self.view.frame.size.height-50)];
     view.tag = kCurrentViewTag;
     
     UITableView *tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height) style:UITableViewStylePlain];
@@ -100,6 +132,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Bathroom *currentBathroom = [self.currentArray objectAtIndex:indexPath.row];
+    CrappDetailViewController *detail = [[CrappDetailViewController alloc]init];
+    detail.bathroom = currentBathroom;
+    [self.navigationController pushViewController:detail animated:YES];
+    [detail release];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -110,12 +154,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    return 5;
+    return [self.currentArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CrappListingCell *cell = nil;
+    Bathroom *bathroom = [self.currentArray objectAtIndex:indexPath.row];
     
     cell = [tableView dequeueReusableCellWithIdentifier:@"ListingCellID"];
     if (cell == nil) {
@@ -124,7 +169,7 @@
     }
     
     [cell removeInnerview];
-    [cell setAttributesWith:[NSDictionary dictionaryWithObjectsAndKeys:@"hey", @"hey", nil]];
+    [cell setAttributesWith:bathroom];
     
     return cell;
 }
@@ -142,5 +187,7 @@
 {
     return 100;
 }
+
+
 
 @end

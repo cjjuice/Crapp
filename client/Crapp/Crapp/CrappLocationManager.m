@@ -38,9 +38,19 @@ static CrappLocationManager *sharedInstance;
     [manager stopUpdatingLocation];
 }
 
++(NSString *)getLat
+{
+    return @"41.8123";
+}
+
++(NSString *)getLong
+{
+    return @"-71.243";
+}
+
 +(NSDictionary *)getCurrentLocation
 {
-    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[[CrappLocationManager sharedInstance] lat], @"lat", [[CrappLocationManager sharedInstance] longi], @"long", nil];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"41.8123", @"lat", @"-71.243", @"long", nil];
     return dictionary;
 }
 
@@ -61,6 +71,10 @@ static CrappLocationManager *sharedInstance;
     seconds = decimal * 3600 - minutes * 60;
     self.longi = [NSString stringWithFormat:@"%d° %d' %1.4f\"",
                        degrees, minutes, seconds];
+    
+    [self stop];
+    
+    NSLog(@"%@:%@", self.lat, self.longi);
     
     
 }

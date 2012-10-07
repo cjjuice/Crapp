@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1B42E616218F250022AAB5 /* CrappDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B42E416218F250022AAB5 /* CrappDetailViewController.m */; };
+		0A1B42E716218F250022AAB5 /* CrappDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B42E516218F250022AAB5 /* CrappDetailViewController.xib */; };
+		0A1B42EB162193EA0022AAB5 /* CrappRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B42E9162193EA0022AAB5 /* CrappRateViewController.m */; };
+		0A1B42EC162193EA0022AAB5 /* CrappRateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B42EA162193EA0022AAB5 /* CrappRateViewController.xib */; };
+		0A1B42F016219EB80022AAB5 /* CrappAddBathroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B42EE16219EB80022AAB5 /* CrappAddBathroomViewController.m */; };
+		0A1B42F116219EB80022AAB5 /* CrappAddBathroomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B42EF16219EB80022AAB5 /* CrappAddBathroomViewController.xib */; };
+		0A1B42F41621A1C30022AAB5 /* CrappCheckBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B42F31621A1C30022AAB5 /* CrappCheckBoxView.m */; };
+		0A1B42F61621BB5A0022AAB5 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B42F51621BB5A0022AAB5 /* background.png */; };
+		0A1B42F91621C11C0022AAB5 /* Icon-VirtualStall.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B42F71621C11C0022AAB5 /* Icon-VirtualStall.png */; };
+		0A1B42FA1621C11C0022AAB5 /* Icon-VirtualStall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B42F81621C11C0022AAB5 /* Icon-VirtualStall@2x.png */; };
 		0A27CEE01620623300189813 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CEDF1620623300189813 /* UIKit.framework */; };
 		0A27CEE21620623300189813 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CEE11620623300189813 /* Foundation.framework */; };
 		0A27CEE41620623300189813 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CEE31620623300189813 /* CoreGraphics.framework */; };
 		0A27CEEA1620623300189813 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEE81620623300189813 /* InfoPlist.strings */; };
 		0A27CEEC1620623300189813 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CEEB1620623300189813 /* main.m */; };
 		0A27CEF01620623300189813 /* CrappAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CEEF1620623300189813 /* CrappAppDelegate.m */; };
-		0A27CEF21620623300189813 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEF11620623300189813 /* Default.png */; };
 		0A27CEF41620623300189813 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEF31620623300189813 /* Default@2x.png */; };
 		0A27CEF61620623300189813 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CEF51620623300189813 /* Default-568h@2x.png */; };
 		0A27CEF91620623300189813 /* CrappViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CEF81620623300189813 /* CrappViewController.m */; };
@@ -53,9 +62,44 @@
 		0A27CF721620A17800189813 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27CF711620A17700189813 /* CoreLocation.framework */; };
 		0A27CF751620B14600189813 /* CrappMapContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF741620B14400189813 /* CrappMapContainer.m */; };
 		0A27CF771620B25900189813 /* map.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF761620B25800189813 /* map.txt */; };
+		0A27CF7B1620E40C00189813 /* BathroomReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF7A1620E40C00189813 /* BathroomReview.m */; };
+		0A27CF7E1620E40F00189813 /* NewsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF7D1620E40F00189813 /* NewsItem.m */; };
+		0A27CF841620E41000189813 /* BathroomScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CF831620E41000189813 /* BathroomScore.m */; };
+		0A27CF921620E5C900189813 /* Icon-AroundMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF861620E5C900189813 /* Icon-AroundMe.png */; };
+		0A27CF931620E5C900189813 /* Icon-AroundMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF871620E5C900189813 /* Icon-AroundMe@2x.png */; };
+		0A27CF941620E5C900189813 /* Icon-BathroomLog.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF881620E5C900189813 /* Icon-BathroomLog.png */; };
+		0A27CF951620E5C900189813 /* Icon-BathroomLog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF891620E5C900189813 /* Icon-BathroomLog@2x.png */; };
+		0A27CF961620E5C900189813 /* Icon-Entertainment.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF8A1620E5C900189813 /* Icon-Entertainment.png */; };
+		0A27CF971620E5C900189813 /* Icon-Entertainment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF8B1620E5C900189813 /* Icon-Entertainment@2x.png */; };
+		0A27CF981620E5C900189813 /* Icon-News.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF8C1620E5C900189813 /* Icon-News.png */; };
+		0A27CF991620E5C900189813 /* Icon-News@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF8D1620E5C900189813 /* Icon-News@2x.png */; };
+		0A27CF9A1620E5C900189813 /* Icon-Ratings.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF8E1620E5C900189813 /* Icon-Ratings.png */; };
+		0A27CF9B1620E5C900189813 /* Icon-Ratings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF8F1620E5C900189813 /* Icon-Ratings@2x.png */; };
+		0A27CF9C1620E5C900189813 /* Icon-VirtualWall.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF901620E5C900189813 /* Icon-VirtualWall.png */; };
+		0A27CF9D1620E5C900189813 /* Icon-VirtualWall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF911620E5C900189813 /* Icon-VirtualWall@2x.png */; };
+		0A27CF9F1620E77400189813 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CF9E1620E77300189813 /* Default.png */; };
+		0A27CFA2162107AA00189813 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CFA1162107A900189813 /* JSONKit.m */; };
+		0A27CFA516210F2F00189813 /* Bathroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27CFA416210F2F00189813 /* Bathroom.m */; };
+		0A27CFA71621113700189813 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CFA61621113600189813 /* Icon.png */; };
+		0A27CFA916211CCD00189813 /* Icon-Gottago-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CFA816211CCD00189813 /* Icon-Gottago-sm.png */; };
+		0A27CFAB16211F4F00189813 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A27CFAA16211F4E00189813 /* star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1B42E316218F250022AAB5 /* CrappDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappDetailViewController.h; sourceTree = "<group>"; };
+		0A1B42E416218F250022AAB5 /* CrappDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappDetailViewController.m; sourceTree = "<group>"; };
+		0A1B42E516218F250022AAB5 /* CrappDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappDetailViewController.xib; sourceTree = "<group>"; };
+		0A1B42E8162193EA0022AAB5 /* CrappRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappRateViewController.h; sourceTree = "<group>"; };
+		0A1B42E9162193EA0022AAB5 /* CrappRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappRateViewController.m; sourceTree = "<group>"; };
+		0A1B42EA162193EA0022AAB5 /* CrappRateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappRateViewController.xib; sourceTree = "<group>"; };
+		0A1B42ED16219EB80022AAB5 /* CrappAddBathroomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappAddBathroomViewController.h; sourceTree = "<group>"; };
+		0A1B42EE16219EB80022AAB5 /* CrappAddBathroomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappAddBathroomViewController.m; sourceTree = "<group>"; };
+		0A1B42EF16219EB80022AAB5 /* CrappAddBathroomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CrappAddBathroomViewController.xib; sourceTree = "<group>"; };
+		0A1B42F21621A1C20022AAB5 /* CrappCheckBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappCheckBoxView.h; sourceTree = "<group>"; };
+		0A1B42F31621A1C30022AAB5 /* CrappCheckBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappCheckBoxView.m; sourceTree = "<group>"; };
+		0A1B42F51621BB5A0022AAB5 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		0A1B42F71621C11C0022AAB5 /* Icon-VirtualStall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-VirtualStall.png"; sourceTree = "<group>"; };
+		0A1B42F81621C11C0022AAB5 /* Icon-VirtualStall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-VirtualStall@2x.png"; sourceTree = "<group>"; };
 		0A27CEDB1620623300189813 /* Crapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A27CEDF1620623300189813 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A27CEE11620623300189813 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +110,6 @@
 		0A27CEED1620623300189813 /* Crapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crapp-Prefix.pch"; sourceTree = "<group>"; };
 		0A27CEEE1620623300189813 /* CrappAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrappAppDelegate.h; sourceTree = "<group>"; };
 		0A27CEEF1620623300189813 /* CrappAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrappAppDelegate.m; sourceTree = "<group>"; };
-		0A27CEF11620623300189813 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0A27CEF31620623300189813 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0A27CEF51620623300189813 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0A27CEF71620623300189813 /* CrappViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrappViewController.h; sourceTree = "<group>"; };
@@ -124,6 +167,32 @@
 		0A27CF731620B14300189813 /* CrappMapContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrappMapContainer.h; sourceTree = "<group>"; };
 		0A27CF741620B14400189813 /* CrappMapContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrappMapContainer.m; sourceTree = "<group>"; };
 		0A27CF761620B25800189813 /* map.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map.txt; sourceTree = "<group>"; };
+		0A27CF791620E40C00189813 /* BathroomReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BathroomReview.h; sourceTree = "<group>"; };
+		0A27CF7A1620E40C00189813 /* BathroomReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BathroomReview.m; sourceTree = "<group>"; };
+		0A27CF7C1620E40F00189813 /* NewsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItem.h; sourceTree = "<group>"; };
+		0A27CF7D1620E40F00189813 /* NewsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItem.m; sourceTree = "<group>"; };
+		0A27CF821620E41000189813 /* BathroomScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BathroomScore.h; sourceTree = "<group>"; };
+		0A27CF831620E41000189813 /* BathroomScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BathroomScore.m; sourceTree = "<group>"; };
+		0A27CF861620E5C900189813 /* Icon-AroundMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-AroundMe.png"; sourceTree = "<group>"; };
+		0A27CF871620E5C900189813 /* Icon-AroundMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-AroundMe@2x.png"; sourceTree = "<group>"; };
+		0A27CF881620E5C900189813 /* Icon-BathroomLog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-BathroomLog.png"; sourceTree = "<group>"; };
+		0A27CF891620E5C900189813 /* Icon-BathroomLog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-BathroomLog@2x.png"; sourceTree = "<group>"; };
+		0A27CF8A1620E5C900189813 /* Icon-Entertainment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Entertainment.png"; sourceTree = "<group>"; };
+		0A27CF8B1620E5C900189813 /* Icon-Entertainment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Entertainment@2x.png"; sourceTree = "<group>"; };
+		0A27CF8C1620E5C900189813 /* Icon-News.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-News.png"; sourceTree = "<group>"; };
+		0A27CF8D1620E5C900189813 /* Icon-News@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-News@2x.png"; sourceTree = "<group>"; };
+		0A27CF8E1620E5C900189813 /* Icon-Ratings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Ratings.png"; sourceTree = "<group>"; };
+		0A27CF8F1620E5C900189813 /* Icon-Ratings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Ratings@2x.png"; sourceTree = "<group>"; };
+		0A27CF901620E5C900189813 /* Icon-VirtualWall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-VirtualWall.png"; sourceTree = "<group>"; };
+		0A27CF911620E5C900189813 /* Icon-VirtualWall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-VirtualWall@2x.png"; sourceTree = "<group>"; };
+		0A27CF9E1620E77300189813 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0A27CFA0162107A900189813 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		0A27CFA1162107A900189813 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		0A27CFA316210F2F00189813 /* Bathroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bathroom.h; sourceTree = "<group>"; };
+		0A27CFA416210F2F00189813 /* Bathroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bathroom.m; sourceTree = "<group>"; };
+		0A27CFA61621113600189813 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0A27CFA816211CCD00189813 /* Icon-Gottago-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Gottago-sm.png"; sourceTree = "<group>"; };
+		0A27CFAA16211F4E00189813 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +253,7 @@
 		0A27CEE51620623300189813 /* Crapp */ = {
 			isa = PBXGroup;
 			children = (
+				0A27CF781620E3F300189813 /* Data Model */,
 				0A27CF68162098C400189813 /* CrappFeedHandler.h */,
 				0A27CF69162098C400189813 /* CrappFeedHandler.m */,
 				0A27CF6B16209C6600189813 /* CrappLocationManager.h */,
@@ -208,6 +278,17 @@
 				0A27CEFA1620623300189813 /* CrappViewController_iPhone.xib */,
 				0A27CEFD1620623300189813 /* CrappViewController_iPad.xib */,
 				0A27CF761620B25800189813 /* map.txt */,
+				0A1B42E316218F250022AAB5 /* CrappDetailViewController.h */,
+				0A1B42E416218F250022AAB5 /* CrappDetailViewController.m */,
+				0A1B42E516218F250022AAB5 /* CrappDetailViewController.xib */,
+				0A1B42E8162193EA0022AAB5 /* CrappRateViewController.h */,
+				0A1B42E9162193EA0022AAB5 /* CrappRateViewController.m */,
+				0A1B42EA162193EA0022AAB5 /* CrappRateViewController.xib */,
+				0A1B42ED16219EB80022AAB5 /* CrappAddBathroomViewController.h */,
+				0A1B42EE16219EB80022AAB5 /* CrappAddBathroomViewController.m */,
+				0A1B42EF16219EB80022AAB5 /* CrappAddBathroomViewController.xib */,
+				0A1B42F21621A1C20022AAB5 /* CrappCheckBoxView.h */,
+				0A1B42F31621A1C30022AAB5 /* CrappCheckBoxView.m */,
 			);
 			path = Crapp;
 			sourceTree = "<group>";
@@ -215,11 +296,11 @@
 		0A27CEE61620623300189813 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A27CF851620E5AE00189813 /* Images */,
 				0A27CEE71620623300189813 /* Crapp-Info.plist */,
 				0A27CEE81620623300189813 /* InfoPlist.strings */,
 				0A27CEEB1620623300189813 /* main.m */,
 				0A27CEED1620623300189813 /* Crapp-Prefix.pch */,
-				0A27CEF11620623300189813 /* Default.png */,
 				0A27CEF31620623300189813 /* Default@2x.png */,
 				0A27CEF51620623300189813 /* Default-568h@2x.png */,
 			);
@@ -325,6 +406,49 @@
 			name = "Add Rating";
 			sourceTree = "<group>";
 		};
+		0A27CF781620E3F300189813 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A27CFA0162107A900189813 /* JSONKit.h */,
+				0A27CFA1162107A900189813 /* JSONKit.m */,
+				0A27CF821620E41000189813 /* BathroomScore.h */,
+				0A27CF831620E41000189813 /* BathroomScore.m */,
+				0A27CF7C1620E40F00189813 /* NewsItem.h */,
+				0A27CF7D1620E40F00189813 /* NewsItem.m */,
+				0A27CF791620E40C00189813 /* BathroomReview.h */,
+				0A27CF7A1620E40C00189813 /* BathroomReview.m */,
+				0A27CFA316210F2F00189813 /* Bathroom.h */,
+				0A27CFA416210F2F00189813 /* Bathroom.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		0A27CF851620E5AE00189813 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B42F51621BB5A0022AAB5 /* background.png */,
+				0A27CFAA16211F4E00189813 /* star.png */,
+				0A27CFA816211CCD00189813 /* Icon-Gottago-sm.png */,
+				0A27CFA61621113600189813 /* Icon.png */,
+				0A27CF9E1620E77300189813 /* Default.png */,
+				0A27CF861620E5C900189813 /* Icon-AroundMe.png */,
+				0A27CF871620E5C900189813 /* Icon-AroundMe@2x.png */,
+				0A27CF881620E5C900189813 /* Icon-BathroomLog.png */,
+				0A27CF891620E5C900189813 /* Icon-BathroomLog@2x.png */,
+				0A27CF8A1620E5C900189813 /* Icon-Entertainment.png */,
+				0A27CF8B1620E5C900189813 /* Icon-Entertainment@2x.png */,
+				0A27CF8C1620E5C900189813 /* Icon-News.png */,
+				0A27CF8D1620E5C900189813 /* Icon-News@2x.png */,
+				0A27CF8E1620E5C900189813 /* Icon-Ratings.png */,
+				0A27CF8F1620E5C900189813 /* Icon-Ratings@2x.png */,
+				0A1B42F71621C11C0022AAB5 /* Icon-VirtualStall.png */,
+				0A1B42F81621C11C0022AAB5 /* Icon-VirtualStall@2x.png */,
+				0A27CF901620E5C900189813 /* Icon-VirtualWall.png */,
+				0A27CF911620E5C900189813 /* Icon-VirtualWall@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,7 +502,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A27CEEA1620623300189813 /* InfoPlist.strings in Resources */,
-				0A27CEF21620623300189813 /* Default.png in Resources */,
 				0A27CEF41620623300189813 /* Default@2x.png in Resources */,
 				0A27CEF61620623300189813 /* Default-568h@2x.png in Resources */,
 				0A27CEFC1620623300189813 /* CrappViewController_iPhone.xib in Resources */,
@@ -393,6 +516,28 @@
 				0A27CF4E1620792000189813 /* CrappNewsViewController.xib in Resources */,
 				0A27CF5416207E5700189813 /* CrappAddRatingViewController.xib in Resources */,
 				0A27CF771620B25900189813 /* map.txt in Resources */,
+				0A27CF921620E5C900189813 /* Icon-AroundMe.png in Resources */,
+				0A27CF931620E5C900189813 /* Icon-AroundMe@2x.png in Resources */,
+				0A27CF941620E5C900189813 /* Icon-BathroomLog.png in Resources */,
+				0A27CF951620E5C900189813 /* Icon-BathroomLog@2x.png in Resources */,
+				0A27CF961620E5C900189813 /* Icon-Entertainment.png in Resources */,
+				0A27CF971620E5C900189813 /* Icon-Entertainment@2x.png in Resources */,
+				0A27CF981620E5C900189813 /* Icon-News.png in Resources */,
+				0A27CF991620E5C900189813 /* Icon-News@2x.png in Resources */,
+				0A27CF9A1620E5C900189813 /* Icon-Ratings.png in Resources */,
+				0A27CF9B1620E5C900189813 /* Icon-Ratings@2x.png in Resources */,
+				0A27CF9C1620E5C900189813 /* Icon-VirtualWall.png in Resources */,
+				0A27CF9D1620E5C900189813 /* Icon-VirtualWall@2x.png in Resources */,
+				0A27CF9F1620E77400189813 /* Default.png in Resources */,
+				0A27CFA71621113700189813 /* Icon.png in Resources */,
+				0A27CFA916211CCD00189813 /* Icon-Gottago-sm.png in Resources */,
+				0A27CFAB16211F4F00189813 /* star.png in Resources */,
+				0A1B42E716218F250022AAB5 /* CrappDetailViewController.xib in Resources */,
+				0A1B42EC162193EA0022AAB5 /* CrappRateViewController.xib in Resources */,
+				0A1B42F116219EB80022AAB5 /* CrappAddBathroomViewController.xib in Resources */,
+				0A1B42F61621BB5A0022AAB5 /* background.png in Resources */,
+				0A1B42F91621C11C0022AAB5 /* Icon-VirtualStall.png in Resources */,
+				0A1B42FA1621C11C0022AAB5 /* Icon-VirtualStall@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +569,15 @@
 				0A27CF6D16209C6800189813 /* CrappLocationManager.m in Sources */,
 				0A27CF701620A0A900189813 /* CrappBathroomCellView.m in Sources */,
 				0A27CF751620B14600189813 /* CrappMapContainer.m in Sources */,
+				0A27CF7B1620E40C00189813 /* BathroomReview.m in Sources */,
+				0A27CF7E1620E40F00189813 /* NewsItem.m in Sources */,
+				0A27CF841620E41000189813 /* BathroomScore.m in Sources */,
+				0A27CFA2162107AA00189813 /* JSONKit.m in Sources */,
+				0A27CFA516210F2F00189813 /* Bathroom.m in Sources */,
+				0A1B42E616218F250022AAB5 /* CrappDetailViewController.m in Sources */,
+				0A1B42EB162193EA0022AAB5 /* CrappRateViewController.m in Sources */,
+				0A1B42F016219EB80022AAB5 /* CrappAddBathroomViewController.m in Sources */,
+				0A1B42F41621A1C30022AAB5 /* CrappCheckBoxView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

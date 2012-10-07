@@ -9,6 +9,7 @@
 #import "CrappAppDelegate.h"
 
 #import "CrappViewController.h"
+#import "CrappLocationManager.h"
 
 @implementation CrappAppDelegate
 
@@ -33,6 +34,9 @@
     navController.navigationBar.tintColor = [UIColor blackColor];
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
+    
+    [CrappLocationManager sharedInstance];
+    
     return YES;
 }
 

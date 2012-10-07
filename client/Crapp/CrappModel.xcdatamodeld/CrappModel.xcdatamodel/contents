@@ -1,4 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="CrappModel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1810" systemVersion="12C54" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1810" systemVersion="12C54" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Bathroom" representedClassName="Bathroom" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasAttendent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasProductDispenser" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasSignage" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="hasWifi" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFamily" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isGreen" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isHandicapAccessible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isHandsFree" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isPublic" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isUnisex" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BathroomReview" inverseName="bathroom" inverseEntity="BathroomReview" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BathroomScore" inverseName="bathroom" inverseEntity="BathroomScore" syncable="YES"/>
+    </entity>
+    <entity name="BathroomReview" representedClassName="BathroomReview" syncable="YES">
+        <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bathroom" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Bathroom" inverseName="reviews" inverseEntity="Bathroom" syncable="YES"/>
+    </entity>
+    <entity name="BathroomScore" representedClassName="BathroomScore" syncable="YES">
+        <attribute name="score" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bathroom" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Bathroom" inverseName="scores" inverseEntity="Bathroom" syncable="YES"/>
+    </entity>
+    <entity name="NewsItem" representedClassName="NewsItem" syncable="YES">
+        <attribute name="byline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bathroom" positionX="160" positionY="192" width="128" height="360"/>
+        <element name="BathroomScore" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="BathroomReview" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="NewsItem" positionX="160" positionY="192" width="128" height="120"/>
+    </elements>
 </model>

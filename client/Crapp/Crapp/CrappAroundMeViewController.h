@@ -10,4 +10,6 @@
 
 @interface CrappAroundMeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property(nonatomic, retain)NSArray *currentArray;
+
 @end

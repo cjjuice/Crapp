@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Bathroom.h"
 
 @interface CrappBathroomCellView : UIView
 
--(void)setAttributesWith:(NSDictionary *)dictionary;
+-(void)setAttributesWith:(Bathroom *)bathroom;
 
 
 @end

@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^FeedGettingBlock)(NSDictionary *);
+
+
 @interface CrappFeedHandler : NSObject
 
-+(void)getBathroomsByParameters:(NSDictionary *)dictionary;
++(void)getBathroomsByParameters:(NSDictionary *)dictionary withBlock:(FeedGettingBlock)block;
 +(void)getBathroomDetailsBy:(NSDictionary *)dictionary;
 +(void)addBathroomWith:(NSDictionary *)dictionary;
 +(void)addReviewToBathroomWith:(NSDictionary *)dictionary;

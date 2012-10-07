@@ -8,6 +8,7 @@
 
 #import "CrappBathroomCellView.h"
 #import "CrappListingCell.h"
+#import "Bathroom.h"
 
 #define kViewTag 6543
 
@@ -29,11 +30,11 @@
     // Configure the view for the selected state
 }
 
--(void)setAttributesWith:(NSDictionary *)dictionary
+-(void)setAttributesWith:(Bathroom *)bathroom
 {
     CrappBathroomCellView *view = [[CrappBathroomCellView alloc]initWithFrame:CGRectMake(0, 0, self.contentView.frame.size.width, 100)];
     view.tag = kViewTag;
-    [view setAttributesWith:dictionary];
+    [view setAttributesWith:bathroom];
     [self.contentView addSubview:view];
     [view release];
     
