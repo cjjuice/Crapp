@@ -23,6 +23,9 @@
         NSString *fileText = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
         [webview loadHTMLString:fileText baseURL:nil];
         
+        NSString *jsCommand = [NSString stringWithFormat:@"addMarker(%f, %f)",-33.890542, 151.274856];
+       
+        [webview stringByEvaluatingJavaScriptFromString:jsCommand];
         [webview release];
         
         
@@ -30,7 +33,5 @@
     }
     return self;
 }
-
-
 
 @end

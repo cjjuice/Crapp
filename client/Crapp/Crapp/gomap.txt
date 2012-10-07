@@ -9,17 +9,17 @@
 <body>
   <div id="map" style="width: 500px; height: 400px;"></div>
   <script type="text/javascript">
-  function addMarker() {
-     var locations = [
-      ['JWU Rest Room', 41.819870, -71.412601, 4],
-      ['Coogee Beach',40.819870, -70.412601, 5],
-      ['Cronulla Beach', 41.819870, -71.112601, 3],
-      ['Manly Beach', 41.819870, -70.612601, 2],
-      ['Maroubra Beach', 41.819870, -71.312601, 1]
+  function addMarker() { 
+    var locations = [
+      ['JWU', 41.819870, -71.412601, 4],
+      ['Coogee Beach', -33.923036, 151.259052, 5],
+      ['Cronulla Beach', -34.028249, 151.157507, 3],
+      ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+      ['Maroubra Beach', -33.950198, 151.259302, 1]
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 14,
+      zoom: 16,
       center: new google.maps.LatLng(41.819870, -71.412601),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -28,9 +28,8 @@
 
     var marker, i;
 
-    for (i = 0; i < locations.length; i++) {  
       marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        position: new google.maps.LatLng(41.819870, -71.412601),
         map: map
       });
 
@@ -40,7 +39,6 @@
           infowindow.open(map, marker);
         }
       })(marker, i));
-    }
 }
   </script>
 <body onload=addMarker() </body>
